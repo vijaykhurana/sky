@@ -1,0 +1,23 @@
+<div ng-controller="productSelectionCtrl" class="row">
+    <div class="col-sm-4">
+        <div><strong>Sports</strong></div>
+        <div ng-repeat="product in categories.SPORTS">
+            {{product.name}}
+            <input type="checkbox" ng-checked="basket.indexOf(product.name) > -1" ng-click="updateBasket(product.name)" />
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div><strong>News</strong></div>
+        <div ng-repeat="product in categories.NEWS">
+            {{product.name}}
+            <input type="checkbox" ng-checked="basket.indexOf(product.name) > -1" ng-click="updateBasket(product.name)" />
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div><strong>Basket</strong></div>
+        <div ng-repeat="product in basket">- {{product}}</div>
+    </div>
+</div>
+<div class="row checkout">
+    <div class="col-sm-4 col-sm-offset-8"><a href="#checkout">CHECKOUT</a></div>
+</div>

@@ -1,0 +1,18 @@
+header {
+    height: 30px;
+    background-color: #6699FF;
+}
+footer {
+    height: 40px;
+    background-color: #6699FF;
+}
+.col-sm-4 {
+    background-color: #ffffff;
+    border: 1px solid #6699FF;
+}
+.checkout {
+    padding-top: 10px;
+}
+.subscribedProduct {
+    padding-top:5px;
+}

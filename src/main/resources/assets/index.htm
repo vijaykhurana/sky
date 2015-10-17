@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" ng-app="skyExerciseApp">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Sky Exercise</title>
+
+  <script src="lib/angular/angular.min.js"></script>
+  <script src="lib/angular/angular-route.min.js"></script>
+  <script src="lib/angular/angular-resource.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <script src="js/skyExerciseApp.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/services.js"></script>
+  <link rel="stylesheet" href="css/app.css">
+
+</head>
+<body>
+<div class="container-fluid">
+ <header class="row"><div class="col-sm-12">HEADER</div></header>
+  <div ng-view id="main"></div>
+ <footer class="row"><div class="col-sm-12">FOOTER</div></footer>
+</div>
+</body>
+</html>

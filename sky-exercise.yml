@@ -1,0 +1,14 @@
+server:
+  rootPath: /api/*
+  applicationConnectors:
+    - type: http
+      port: 8180
+  adminConnectors:
+    - type: http
+      port: 8181
+
+httpClient:
+  timeout: 2000ms
+  connectionTimeout: 2000ms
+
+localUrl: http://localhost

@@ -1,0 +1,9 @@
+1) The application listens on port 8180
+
+2) In real life applications, a healthcheck would be provided for each external dependency of our app.
+Since the Sky Exercise Application has no such dependencies, there were no healthchecks added. A corresponding message for missing healthchecks appears when running or building the app.
+
+3) jasmine-maven-plugin is used to run the jasmine test during build.
+This uses HtmlUnit which does not play nicely with the latest versions of jQuery and logs some css validation and js errors during the build.
+A workaround is to use jasmine-maven-plugin with phantomjs, but this would require installation of phantomjs in the system where the build runs.
+As the errors do not affect the running of the jasmine tests, no further action was taken.
