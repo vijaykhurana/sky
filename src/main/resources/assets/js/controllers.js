@@ -18,7 +18,7 @@ controllers.controller('productSelectionCtrl', function($scope, $http, storageSe
        storageService.set('selectedProducts', $scope.basket);
     }
 
-    // the customer id would be passed from the cookie. Assume now it is 1
+    // the customer id would be passed from the cookie. Assume now it is 1 to retrieve products for a London customer
     restService.get("/customer/1/products").then(function(result) {
         $scope.categories = result;
     });

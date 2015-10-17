@@ -1,5 +1,7 @@
 package com.sky.exercise.api;
 
+import com.sky.exercise.util.RequiredForMarshalling;
+
 import java.util.Objects;
 
 public class Product {
@@ -7,6 +9,10 @@ public class Product {
 
     public Product(String name) {
         this.name = name;
+    }
+
+    @RequiredForMarshalling
+    public Product() {
     }
 
     public String getName() {
