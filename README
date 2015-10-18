@@ -1,9 +1,21 @@
-1) The application listens on port 8180
+1) It is a dropwizard app with Angular v1 front end. Implemented with java v1.8.0.25
 
-2) In real life applications, a healthcheck would be provided for each external dependency of our app.
+2) mvn clean install to build. This will run all unit and integration tests for Java, and the jasmine tests for Angular.
+It will create a fat jar in the target directory.
+
+3) From within an IDE just run the SkyExerciseApplication.
+Otherwise put in the same directory the fat jar and the sky-exercise.yml and run: java -jar sky-exercise-1.0-SNAPSHOT.jar
+
+4) The application listens on localhost:8180
+
+5) The application assumes that the customer id has been retrieved from a cookie and currently is statically added in the controllers.js to be 1.
+This corresponds to a London customer and will display available products for London only.
+Changing this to 2 will display available products for a Liverpool customer.
+
+6) In real life applications, a healthcheck would be provided for each external dependency of our app.
 Since the Sky Exercise Application has no such dependencies, there were no healthchecks added. A corresponding message for missing healthchecks appears when running or building the app.
 
-3) jasmine-maven-plugin is used to run the jasmine test during build.
+7) jasmine-maven-plugin is used to run the jasmine tests during build.
 This uses HtmlUnit which does not play nicely with the latest versions of jQuery and logs some css validation and js errors during the build.
-A workaround is to use jasmine-maven-plugin with phantomjs, but this would require installation of phantomjs in the system where the build runs.
-As the errors do not affect the running of the jasmine tests, no further action was taken.
+To fix that we should use jasmine-maven-plugin with phantomjs, but this would require installation of phantomjs in the system where the build runs.
+As the errors do not affect the run of the jasmine tests, no further action was taken.
