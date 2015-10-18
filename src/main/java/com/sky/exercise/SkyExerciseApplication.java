@@ -11,14 +11,14 @@ import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 
 /**
- * Main class which runs the sky exercise application
+ * Main class which runs the Sky exercise application
  */
 public class SkyExerciseApplication extends Application<SkyExerciseConfiguration> {
 
     @Override
     public void run(SkyExerciseConfiguration config, Environment environment) throws Exception {
-        CatalogueService catalogueService = new CatalogueService();
-        CustomerLocationService customerLocationService = new CustomerLocationServiceStub();
+        final CatalogueService catalogueService = new CatalogueService();
+        final CustomerLocationService customerLocationService = new CustomerLocationServiceStub();
 
         final CustomerResource resource = new CustomerResource(catalogueService, customerLocationService);
         environment.jersey().setUrlPattern("/api/*");

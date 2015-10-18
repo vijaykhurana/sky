@@ -3,9 +3,12 @@ package com.sky.exercise.domain;
 import com.google.common.collect.Multimap;
 import com.sky.exercise.api.Category;
 import com.sky.exercise.api.Product;
-import com.sky.exercise.api.ProductSelectorDecorator;
 import com.sky.exercise.api.ProductSelector;
+import com.sky.exercise.api.ProductSelectorDecorator;
 
+/**
+ * Used to select the channel subscriptions available to Liverpool customers
+ */
 public class LiverpoolProductDecorator extends
         ProductSelectorDecorator {
 

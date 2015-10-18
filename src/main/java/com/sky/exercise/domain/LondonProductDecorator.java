@@ -6,6 +6,9 @@ import com.sky.exercise.api.Product;
 import com.sky.exercise.api.ProductSelector;
 import com.sky.exercise.api.ProductSelectorDecorator;
 
+/**
+ * Used to select the channel subscriptions available to London customers
+ */
 public class LondonProductDecorator extends
         ProductSelectorDecorator {
 

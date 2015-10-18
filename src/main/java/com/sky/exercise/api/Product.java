@@ -4,6 +4,9 @@ import com.sky.exercise.util.RequiredForMarshalling;
 
 import java.util.Objects;
 
+/**
+ * The channel subscription is known as the product in this bounded context
+ */
 public class Product {
     private String name;
 

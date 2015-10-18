@@ -4,17 +4,17 @@ import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
 import com.sky.exercise.api.Category;
-import com.sky.exercise.domain.LondonProductDecorator;
 import com.sky.exercise.api.Product;
 import com.sky.exercise.api.ProductSelector;
 import com.sky.exercise.domain.DefaultProductSelector;
 import com.sky.exercise.domain.LiverpoolProductDecorator;
 import com.sky.exercise.domain.Location;
+import com.sky.exercise.domain.LondonProductDecorator;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
 /**
- * Retrieves the selected products for each location using a domain service call
+ * For now, retrieves the available products for either the London or the Liverpool locations
  */
 public class CatalogueService {
 

@@ -5,8 +5,8 @@ import com.sky.exercise.service.exception.InvalidCustomerException;
 
 /**
  * Stubs the getCustomerLocation method.
- * CustomerId 1l returns London locationId
- * CustomerId 2l returns Liverpool locationId
+ * Customer id 1l returns London
+ * Customer id 2l returns Liverpool locationId
  * Otherwise throws a runtime exception
  */
 public class CustomerLocationServiceStub implements CustomerLocationService {
